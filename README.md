@@ -24,7 +24,7 @@ TrackTask is a simple to-do list app built using **HTML**, **CSS**, and **JavaSc
 
 ---
 
-## 📁 Files in the Project
+## Files in the Project
 
 - `index.html` → The main page of the app  
 - `todo.css` → Styles for the app layout, buttons, and task cards  
@@ -34,7 +34,7 @@ TrackTask is a simple to-do list app built using **HTML**, **CSS**, and **JavaSc
 
 ---
 
-## 📦 How to Use
+## How to Use
 
 1. Download or clone this project
 2. Open `index.html` in any modern web browser
