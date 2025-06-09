@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <!--external css file-->
+  <link rel="stylesheet" href="todo.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h2>TrackTask.</h2> <!--name of the to do list application-->
+    <div class="new-task-area">
+      <input type="text" id="taskField" placeholder="Enter your task here" /> <!--entering the task here-->
+      <button onclick="recordTask()">Add</button>
+      <button onclick="clearAll()" class="danger">Clear All</button>
+    </div>
+    <ul id="myTasks"></ul>
+  </div>
+  <footer class="site-footer">
+  © 2025 TrackTask. by Varshasree.
+</footer>
+<!--external Vanilla JavaScript file-->
+  <script src="todo.js"></script>
+</body>
+</html>

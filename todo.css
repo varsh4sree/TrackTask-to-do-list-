@@ -1,0 +1,163 @@
+body {
+  background: url("https://i.pinimg.com/736x/25/01/29/250129578f45a796c94a9c2104400a0b.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 30px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.new-task-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.new-task-area input {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.new-task-area button {
+  padding: 10px 15px;
+  background-color: #ab22429b;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+ul#myTasks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.entry {
+  width: 180px;
+  min-height: 120px;
+  background-color: #fffacd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  position: relative;
+  transform: rotate(-1deg);
+  transition: transform 0.2s;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.entry:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+.entry.done {
+  background-color: #85831ced;
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+  white-space: normal; 
+  word-break: break-word;
+}
+
+
+.entry-controls {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.entry-controls button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ff0015;
+}
+
+.entry input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.site-footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 0.9rem;
+  backdrop-filter: blur(5px);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .new-task-area {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .new-task-area input {
+    width: 100%;
+    max-width: 90vw;
+  }
+
+  .new-task-area button {
+    width: 100%;
+    max-width: 90vw;
+  }
+
+  ul#myTasks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .entry {
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 10px;
+  }
+
+  .site-footer {
+    font-size: 0.75rem;
+    padding: 10px 0;
+  }
+}
+
