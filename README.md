@@ -6,9 +6,9 @@ TrackTask is a simple to-do list app built using **HTML**, **CSS**, and **JavaSc
 
 ## Web Screenshot
 
-![TrackTask Screenshot](screenshot.png)
+![TrackTask Screenshot](tracktask.png)
 
-> 💡 Tip: Replace `screenshot.png` with an actual screenshot file placed in your project folder.
+
 
 ---
 
